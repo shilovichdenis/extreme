@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EXTREME</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/lib/slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="~/css/reset.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="header"  >
+        <div class="container">
+            <div class="header__top">
+                <a class="logo" asp-area="" asp-page="/Index">EXTREME</a>
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link " asp-area="" asp-page="/About">О нас</a>
+                        </li>
+                        <li class="menu__item dropdown">
+                            <a class="menu__link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="true" aria-expanded="false">Тренажёрные залы</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item " asp-area="" asp-page="/SkripnikovaGym">Скрипникова, 15А</a>
+                                <a class="dropdown-item " asp-area="" asp-page="/About">Рокоссовского, 49</a>
+                                <a class="dropdown-item " asp-area="" asp-page="/About">Шпилевского, 59</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link " asp-area="" asp-page="/Galery">Галерея</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" asp-area="" asp-page="/Contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content-text">
+                    <p class="footer__content-info">
+                        There are many variations of passages of Lorem Ipsum available, but
+                        the
+                        majority have suffered alteration in some form, by injected humour, or randomised words which
+                        don't
+                        look even slightly believable.
+                    </p>
+                    <p class="footer__content-info">
+                        There are many variations of passages of Lorem Ipsum available, but
+                        the
+                        majority have suffered alteration in some form, by injected humour, or randomised words which
+                        don't
+                        look even slightly believable.
+                    </p>
+                </div>
+                <div class="logo__container">
+                    <a class="logo footer__logo" href="#">EXTREME</a>
+                </div>
+                <div class="footer__contacts">
+                    <p class="contacts__text">
+                        Телефон:
+                        <a class="contacts__link" href="tel:+375291234567">+375291234567</a>
+                    </p>
+                    <p class="contacts__text">
+                        Email:
+                        <a class="contacts__link" href="">extreme.gym@mail.ru</a>
+                    </p>
+                    <p class="contacts__text">
+                        Instagram:
+                        <a class="contacts__link" href="https://www.instagram.com/extremegym/">extremegym</a>
+                    </p>
+                    <p class="contacts__text">
+                        VK:
+                        <a class="contacts__link" href="https://vk.com/extremegym">extremegym</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom text-muted">
+            <div class="container">
+                <p class="footer__info">
+                    &copy; 2021 - EXTREME - <a asp-area="" asp-page="/Privacy">Privacy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/slick/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="~/lib/slick/slick/slick.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

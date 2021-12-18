@@ -1,0 +1,25 @@
+﻿@page
+@model EXTREME.Pages.GaleryModel
+@{
+    ViewBag.Title = "Galery";
+}
+<link rel="stylesheet" href="~/css/galery.css">
+<header class="header">
+    <div class="header__content">
+        <div class="container">
+            <div class="header__inner">
+                <h1 class="header__title">Галерея</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="album">
+    <div class="container">
+        <div class="album__inner">
+            @foreach (var items in Model.Album)
+            {
+                <img class="photo" src="~/images/gyms/@items" />
+            }
+        </div>
+    </div>
+</section>

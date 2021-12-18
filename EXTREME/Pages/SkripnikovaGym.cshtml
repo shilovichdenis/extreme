@@ -1,0 +1,134 @@
+﻿@page
+@model EXTREME.Pages.SkripnikovaGymModel
+@{
+    ViewData["Title"] = "Skripnikova";
+}
+
+<link rel="stylesheet" href="css/gyms.css">
+
+<header class="header">
+    <div class="header__content">
+        <div class="header__background">
+            <div class="container">
+                <h1 class="header__title">Скрипникова, 15А</h1>
+                <div class="header__info">
+                    <div class="header__text text--left">
+                        There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or randomised words
+                        which don't
+                        look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                        be sure
+                        there isn't anything embarrassing hidden in the middle of text.
+                    </div>
+                    <div class="header__text text--right">
+                        There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or randomised words
+                        which don't
+                        look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                        be sure
+                        there isn't anything embarrassing hidden in the middle of text.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="coach">
+    <div class="container">
+        <div class="coach__inner">
+            <h2 class="title coach__title">Тренеры</h2>
+            <div class="coach__list slider">
+                <div class="coach__item">
+                    <div class="coach__imagebox">
+                        <img class="coach__image" src="~/images/gyms/skripnikova/coachs/coach_1.png" alt="">
+                        <div class="coach__name">
+                            Иванов Иван <br>
+                            Иванович
+                        </div>
+                    </div>
+                    <div class="coach__textbox">
+                        There are many variations of passages of Lorem Ipsum available, but
+                        the majority have suffered alteration in some form, by injected humour, or randomised words
+                        which don't look even slightly believable. ddle of text.
+                    </div>
+                </div>
+                <div class="coach__item">
+                    <div class="coach__imagebox">
+                        <img class="coach__image" src="~/images/gyms/skripnikova/coachs/coach_1.png" alt="">
+                        <div class="coach__name">
+                            Иванов Иван <br>
+                            Иванович
+                        </div>
+                    </div>
+                    <div class="coach__textbox">
+                        There are many variations of passages of Lorem Ipsum available, but
+                        the majority have suffered alteration in some form, by injected humour, or randomised words
+                        which don't look even slightly believable. ddle of text.
+                    </div>
+                </div>
+                <div class="coach__item">
+                    <div class="coach__imagebox">
+                        <img class="coach__image" src="~/images/gyms/skripnikova/coachs/coach_2.png" alt="">
+                        <div class="coach__name">
+                            Иванов Иван <br>
+                            Иванович
+                        </div>
+                    </div>
+                    <div class="coach__textbox">
+                        There are many variations of passages of Lorem Ipsum available, but
+                        the majority have suffered alteration in some form, by injected humour, or randomised words
+                        which don't look even slightly believable. ddle of text.
+                    </div>
+                </div>
+                <div class="coach__item">
+                    <div class="coach__imagebox">
+                        <img class="coach__image" src="~/images/gyms/skripnikova/coachs/coach_2.png" alt="">
+                        <div class="coach__name">
+                            Иванов Иван <br>
+                            Иванович
+                        </div>
+                    </div>
+                    <div class="coach__textbox">
+                        There are many variations of passages of Lorem Ipsum available, but
+                        the majority have suffered alteration in some form, by injected humour, or randomised words
+                        which don't look even slightly believable. ddle of text.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pricelist">
+    <div class="container">
+        <div class="pricelist__inner">
+            <h2 class="title pricelist__title">
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="galery">
+    <div class="container">
+        <div class="galery__inner">
+            <h2 class="title galery__title">Галерея</h2>
+            <div class="galery__list slider">
+                @foreach (var items in Model.Album)
+                {
+                    <img class="galery__img" src="~/images/gyms/skripnikova/galery/@items" />
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map">
+    <div class="container">
+        <div class="map__inner">
+            <div class="map__item">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.6055935143236!2d27.420697816014133!3d53.8912966928911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdb21ba115893%3A0xa4d185d43ad605f4!2z0YPQuy4g0KHQutGA0LjQv9C90LjQutC-0LLQsCAxNdCwLCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1639851909238!5m2!1sru!2sby" width="1150" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>

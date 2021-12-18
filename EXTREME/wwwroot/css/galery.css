@@ -1,0 +1,37 @@
+﻿.header__content {
+    background-image: url(../images/back_galery.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.header__inner {
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__title {
+    font-weight: bold;
+    font-size: 74px;
+    letter-spacing: 10px;
+    line-height: 98px;
+    text-align: center;
+}
+
+.album {
+}
+
+.album__inner {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 75px;
+}
+
+.photo {
+    width: 350px;
+    height: 350px;
+}
